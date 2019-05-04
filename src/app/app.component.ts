@@ -12,4 +12,8 @@ export class AppComponent {
   nextStep() {
     this.currentStep += 1;
   }
+
+  backToStart() {
+    this.currentStep = 1;
+  }
 }

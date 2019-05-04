@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-done-page',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonePageComponent implements OnInit {
 
+  @Output() done = new EventEmitter();
+  
   constructor() { }
 
   ngOnInit() {
+  }
+
+  reviewComplete() {
+    this.done.emit();
   }
 
 }

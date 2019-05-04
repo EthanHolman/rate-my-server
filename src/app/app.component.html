@@ -1,2 +1,2 @@
 <app-landing-page *ngIf='currentStep === 1' (next)='nextStep()' [currentStep]='currentStep'></app-landing-page>
-<app-done-page *ngIf='currentStep == 2'></app-done-page>
+<app-done-page *ngIf='currentStep == 2' (done)='backToStart()'></app-done-page>
