@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RatePageComponent } from './components/rate-page/rate-page.component';
 import { DonePageComponent } from './components/done-page/done-page.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RatePageComponent,
-    DonePageComponent
+    DonePageComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
