@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'rate-my-server';
   currentStep = 1;
+
+  nextStep() {
+    this.currentStep += 1;
+  }
 }

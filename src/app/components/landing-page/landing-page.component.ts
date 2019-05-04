@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
+  @Output() next = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  nextStep() {
+    this.next.emit();
   }
 
 }
