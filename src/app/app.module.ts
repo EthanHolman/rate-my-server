@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RatePageComponent } from './components/rate-page/rate-page.component';
+import { DonePageComponent } from './components/done-page/done-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RatePageComponent,
+    DonePageComponent
   ],
   imports: [
     BrowserModule,
