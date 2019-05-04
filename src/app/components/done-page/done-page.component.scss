@@ -1,0 +1,28 @@
+.done-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+// all direct 'divs' children of done-container
+.done-container > div {
+
+}
+
+.thank-you {
+  text-align: center;
+}
+
+// inside button-container, styles for child button elements
+.button-container button {
+  display: block;
+  margin: auto;
+  background-color: transparent;
+  border: 1px solid black;
+  outline: none;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  font-size: 25px;
+}
